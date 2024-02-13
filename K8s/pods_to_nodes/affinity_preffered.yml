@@ -8,7 +8,7 @@ spec:
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 1
         preference:
-        - matchExpressions:
+          matchExpressions:
           - key: environment
             operator: In
             values:
