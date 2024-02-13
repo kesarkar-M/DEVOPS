@@ -6,7 +6,7 @@ spec:
   affinity:
     nodeAffinity:
       preferredDuringSchedulingIgnoredDuringExecution:
-        nodeSelectorTerms:
+        preference:
         - matchExpressions:
           - key: environment
             operator: In
