@@ -1,6 +1,6 @@
 apiVersion: v1
 kind: ConfigMap
-matadata:
+metadata:
   name: my-cm
 data:
   db_url: 192.160.44.54

@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: ip-app
-    image: harshajain/ip_app:latest
+    image: harshajain/ip_app
     ports:
     - containerPort: 80
     env:
@@ -19,4 +19,3 @@ spec:
         configMapKeyRef:
           name: my-cm
           key: db_user
-
