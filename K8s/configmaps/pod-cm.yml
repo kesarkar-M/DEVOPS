@@ -9,5 +9,14 @@ spec:
     ports:
     - containerPort: 80
     env:
-    - name: env
-      value: prod
+    - name: DB_URL
+      valueFrom:
+        configMapKeyRef:
+          name: my-cm
+          key: db_url
+    - name: DB_USER
+      valueFrom:
+        configMapKeyRef:
+          name: my-cm
+          key: db_user
+
