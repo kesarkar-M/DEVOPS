@@ -12,7 +12,7 @@ spec:
             operator: In
             values:
             - qa
-            - stagging
+            - stagging    
   containers:
   - name: nginx
     image: nginx
