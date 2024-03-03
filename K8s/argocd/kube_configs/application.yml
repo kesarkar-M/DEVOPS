@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/jaintpharsha/Devops-ITD-Aug-2023.git
     targetRevision: main
-    path: K8S/argocd/kube_configs
+    path: K8s/argocd/kube_configs
   destination:
     server: https://13.127.77.61:6443
     namespace: ip-app
