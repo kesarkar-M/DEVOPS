@@ -4,6 +4,6 @@ metadata:
   name: argocd-cluster-manager
   namespace: argocd
 rules:
-- ⁠apiGroups: [""]
+- apiGroups: [""]
   resources: ["clusters"]
   verbs: ["get", "list", "watch", "create", "update", "delete"]
