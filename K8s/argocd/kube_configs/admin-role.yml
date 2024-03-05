@@ -1,13 +1,9 @@
 apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRoleBinding
+kind: Role
 metadata:
-  name: kubernetes-admin
   namespace: argocd
-roleRef:
-  apiGroup: rbac.authorization.k8s.io
-  kind: ClusterRole
-  name: cluster-admin
-subjects:
-- kind: ServiceAccount
-  name: my-argocd-role
-  namespace: argocd
+  name: argocd-role
+rules:
+- apiGroups: [""]
+  resources: [""]
+  verbs: ["get","list","create","apply"]  
