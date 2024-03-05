@@ -1,9 +1,9 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  namespace: kube-system
-  name: argocd-role
+  name: argocd-cluster-manager
+  namespace: argocd
 rules:
-- apiGroups: [""]
-  resources: [""]
-  verbs: ["get","list","create","apply"]  
+•⁠  ⁠apiGroups: [""]
+  resources: ["clusters"]
+  verbs: ["get", "list", "watch", "create", "update", "delete"]
