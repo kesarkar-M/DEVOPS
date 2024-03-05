@@ -8,6 +8,6 @@ roleRef:
   kind: Role
   name: argocd-role
 subjects:
-- kind: user
+- kind: User
   name: alice
   namespace: argocd
