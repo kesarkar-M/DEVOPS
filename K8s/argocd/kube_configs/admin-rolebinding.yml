@@ -8,6 +8,6 @@ roleRef:
   name: argocd-cluster-manager
   apiGroup: rbac.authorization.k8s.io
 subjects:
-•⁠  ⁠kind: ServiceAccount
+- kind: ServiceAccount
   name: argocd-application-controller
   namespace: argocd
