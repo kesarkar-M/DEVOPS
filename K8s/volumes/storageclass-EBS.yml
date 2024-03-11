@@ -6,6 +6,6 @@ provisioner: kubernetes.io/aws-ebs
 parameters: 
   type: gp2
   iopsPerGB: 10
-  fstype:  
+  fstype: ext4
 allowVolumeExpansion: true
 reclaimPolicy: Retain  
