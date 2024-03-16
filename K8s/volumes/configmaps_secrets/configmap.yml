@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: my-cm-vol
 data:
-  app.properties:
+  app.properties: |
     db_url: 192.160.44.54
     db_user: databaseadmin
