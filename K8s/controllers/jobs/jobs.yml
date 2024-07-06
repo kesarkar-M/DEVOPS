@@ -16,3 +16,4 @@ spec:
   backoffLimit: 10
   parallelism: 4
   completions: 2
+  activeDeadlineSeconds: 5
